@@ -49,8 +49,8 @@ public class Login extends javax.swing.JFrame {
                     resultado = 1;
                     
                     if (resultado == 1) {
-                        MantenimientoEstudiante me = new MantenimientoEstudiante();
-                        me.setVisible(true);
+                        Administracion admin = new Administracion();
+                        admin.setVisible(true);
                         this.dispose();
                     }else{
                          JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");

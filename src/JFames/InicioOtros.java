@@ -133,7 +133,7 @@ public class InicioOtros extends javax.swing.JFrame {
                     limpiar();
                 }
            
-            conect.close();
+            
         } catch (Exception e) {
             System.err.println("Error" + e);
         }

@@ -53,6 +53,7 @@ public class RegistroEstudiantes extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         cbxSeccion = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -101,7 +102,15 @@ public class RegistroEstudiantes extends javax.swing.JFrame {
         cbxSeccion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Elija una sección", "1 \"A\"", "2 \"A\"", "1 \"B\"", "2 \"B\"", "3 \"B\"" }));
         jPanel1.add(cbxSeccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 150, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 440));
+        jButton1.setText("Regresar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 450));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -142,6 +151,12 @@ public class RegistroEstudiantes extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnResgistrarActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        InicioEstudiantes ie = new InicioEstudiantes();
+                ie.setVisible(true);
+                this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -180,6 +195,7 @@ public class RegistroEstudiantes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnResgistrar;
     private javax.swing.JComboBox<String> cbxSeccion;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

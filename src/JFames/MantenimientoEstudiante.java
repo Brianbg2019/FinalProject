@@ -131,7 +131,7 @@ public class MantenimientoEstudiante extends javax.swing.JFrame {
             }
         });
 
-        txtSalir.setText("Cerrar");
+        txtSalir.setText("Regresar");
         txtSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSalirActionPerformed(evt);
@@ -281,8 +281,9 @@ public class MantenimientoEstudiante extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void txtSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSalirActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
+        Administracion admin = new Administracion();
+        admin.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_txtSalirActionPerformed
 
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed

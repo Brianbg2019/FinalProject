@@ -46,7 +46,7 @@ public class Administracion extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Dashborard de administración.");
+        jLabel1.setText("Dashboard de administración.");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 83, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(

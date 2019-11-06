@@ -59,7 +59,7 @@ public class Inicio extends javax.swing.JFrame {
                 btnEstudiantesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnEstudiantes, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 100, 70));
+        jPanel1.add(btnEstudiantes, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 130, 70));
 
         btbOtro.setText("OTRO");
         btbOtro.addActionListener(new java.awt.event.ActionListener() {
